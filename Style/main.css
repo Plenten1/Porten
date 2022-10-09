@@ -185,6 +185,36 @@ body{
     color: #fff;
 }
 
+.nav.active{
+    width: 100vw;
+    height: 100vh;
+    background: #0F0F0F;
+    position: absolute;
+    top: 0;
+    left: -15px;
+    display: block;
+    padding-top: 50px;
+}
+
+.nav.active .nav__list{
+    display: block;
+}
+
+.nav.active .list__item{
+    height: unset;
+    width: 100%;
+}
+
+.nav.active .list__item p{
+    text-align: center;
+}
+
+.nav.active .list__item{
+    display: flex;
+    justify-content: center;
+}
+
+
 /* icon Burger Menu*/
 .icon__burger__menu{
     width: 30px;
@@ -218,6 +248,20 @@ body{
     top: 8px;
 }
 
+.icon__burger__menu.active span::before{
+    top: 0;
+}
+
+.icon__burger__menu.active span{
+    top: 14px;
+    transform: rotate(45deg);
+}
+
+.icon__burger__menu.active span:after{
+    top: -2px;
+    transform: rotate(90deg);
+    left: 0;
+}
 
 
 /* Intro */
